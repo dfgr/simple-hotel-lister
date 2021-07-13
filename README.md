@@ -30,6 +30,6 @@ node index.js
 ## Screenshots
 
 #### Main Page
-![main page](./screenshots/main.png "Main Page")
+![main page](./screenshots/main.PNG "Main Page")
 #### Add Hotel Page
-![Add Hotel Page](./screenshots/addHotel.png "Add Hotel")
+![Add Hotel Page](./screenshots/addHotel.PNG "Add Hotel")
