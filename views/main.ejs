@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Hotel Comparer</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/notifications.css">
+</head>
+
+<body style="text-align: center;">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#" style="color: #f5f5f5;">Hotel Comparer</a></div>
+    </nav>
+    <div id="hotels">
+        <% for(let i=0;i != docs.length;i++){ %>
+        <div id="hotel">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-0" id="image">
+                    <div class="simple-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <% for(let d = 0; d != docs[i].imageUrls.length;d++){ %>
+                                <div class="swiper-slide" style="background: url(<%= docs[i].imageUrls[d] %>) center center / cover no-repeat;"></div>
+                                <% } %>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="info">
+                    <h2><strong><em><%= docs[i].name %></em></strong></h2>
+                    <p id="Location">Lokasyon:&nbsp;<a href="<%= docs[i].url %>">Lokasyon için tıklayınız</a></p>
+                    <p id="distance">Denize Uzaklığı: <strong><%= docs[i].distanceToSea %></strong></p>
+                    <hr>
+                    <p id="count">Kaç Kişi İçin: <strong><%= docs[i].familyCount %></strong></p>
+                    <p id="priceForHotel">Fiyat: <strong><%= docs[i].price %></strong></p>
+                </div>
+                <hr>
+            </div>
+        </div> 
+         <% } %>
+    </div>
+    <div id="addHotel">
+        <div id="hotelForm" style="display: none;">
+            <label for="hotelName">Otel İsmi</label>
+            <input id="hotelName" class="form-control" type="text" placeholder="Otel İsmi Giriniz">
+            <label for="locationUrl">Lokayon Url</label>
+            <input id="locationUrl" class="form-control" type="text" placeholder="Lokasyon Url Giriniz">
+            <label for="distanceToSea">Denize Uzaklığı</label>
+            <input id="distanceToSea" type="text"  class="form-control" placeholder="Denize Uzaklığını Giriniz">
+            <label for="familyCount">Kaç Kişi İçin</label>
+            <input id="familyCount" class="form-control" type="text" placeholder="Kaç Kişi Olduğunu Giriniz">
+            <label for="price">Ücret</label>
+            <input type="text" id="price" class="form-control"  placeholder="Fiyatını Giriniz">
+            <label for="hotelmageUrl">Otel Resmi Linki</label>
+            <input id="hotelmageUrl" class="form-control" type="text" placeholder="Otel Url Giriniz">
+            <button id="addImage" type="button" class="btn btn-dark">Resim Urlsi Ekle</button>
+        </div>
+        <button id="addHotelBtn" type="button" class="btn btn-secondary btn-lg btn-block">Otel Ekle</button>
+    </div>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/Simple-Slider.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/notifications.js"></script>
+</body>
+
+</html>
