@@ -26,7 +26,6 @@ node index.js
 2. You must add image links before the other things
 3. Fill the other forms
 4. Click Add Hotel 
-5. Refresh the page
 ## Screenshots
 
 #### Main Page
