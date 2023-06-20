@@ -60,10 +60,7 @@ Contributions are welcome! You can contribute to the project in various ways. If
 ## License
 
 This project is licensed under the [MIT License](LICENSE). For more information, please see the [LICENSE](LICENSE) file.
-```
 
-
-```
 # Türkçe
 
 Bu basit proje, Node.js, EJS, Express ve NeDB kullanarak geliştirilen bir otel listeleme uygulamasıdır. Bu uygulama, farklı otelleri karşılaştırmayı kolaylaştırmak için otel resimleri, fiyatları ve lokasyon linklerini tek bir sitede sağlar.
