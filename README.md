@@ -1,5 +1,5 @@
 
-```
+
 # Simple Hotel Lister
 
 This project is a hotel listing application developed using Node.js, EJS, Express, and NeDB. The purpose of this application is to facilitate comparing different hotels by providing hotel images, prices, and location links from a single site.
@@ -130,6 +130,6 @@ Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır. Daha fazla bilgi için 
 
 ## ScreenShots
 
-![screen1](screenshots/image1.png)
-![screen2](screenshots/image2.png)
+![screen1](image1.png)
+![screen2](image2.png)
 
